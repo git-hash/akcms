@@ -1,0 +1,17 @@
+<{include file="admincp_xheader.htm"}>
+<body style="width:300px;background:#F8F8F8;">
+<script>
+function refreshparent() {
+	parent.location.reload();
+}
+<{if $refresh}>
+setTimeout("refreshparent();", 888);
+<{else}>
+setTimeout("closeparentajaxdiv();", 888);
+<{/if}>
+</script>
+<div style="padding:10px;color:#000;">
+<{$message}>
+</div>
+</body>
+</html>
